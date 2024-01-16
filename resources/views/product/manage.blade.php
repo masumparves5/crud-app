@@ -29,8 +29,8 @@
                                     <td>{{$product->description}}</td>
                                     <td><img src="{{asset($product->image)}}" alt="" height="50px" width="50px"></td>
                                     <td>
-                                        <a href="" class="btn btn-outline-success btn-sm">Edit</a>
-                                        <a href="" class="btn btn-outline-danger btn-sm">Delete</a>
+                                        <a href="{{route('product.edit', ['id' =>$product->id])}}" class="btn btn-outline-success btn-sm">Edit</a>
+                                        <a href=""{{route('product.delete', ['id' =>$product->id])}}"" class="btn btn-outline-danger btn-sm">Delete</a>
                                     </td>
                                 </tr>
                                 @endforeach
